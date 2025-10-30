@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d052c;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      flex: 1;
+    }
+
+    .product {
+      background: linear-gradient(to bottom right, #87e580, #ebcedb);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-sold {
+      background: linear-gradient(to bottom right, #d98067, #ebcedb);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product h2 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .product-sold h2 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .product h2:hover {
+      text-decoration: underline;
+    }
+    .product-sold h2:hover {
+      text-decoration: line-through;
+    }
+    .description {
+      font-size: 0.95em;
+      color: #444;
+      margin-bottom: 1em;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 1em;
+    }
+
+    .add-to-cart {
+      background-color: #2ac712;
+      color: white;
+      padding: 0.8em 1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+      align-self: flex-start;
+    }
+
+    .add-to-cart:hover {
+      background-color: #21820c;
+    }
+
+    .sold-out {
+      background-color: #ff2f00;
+      color: white;
+      padding: 0.6em 1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+      align-self: flex-start;
+    }
+    .sold-out:hover {
+      background-color: #841901;
+    }
+    .product-image {
+      width: 100%;         
+      height: auto;        
+      border-radius: 8px;  
+      margin-bottom: 1em;  
+    }
+    
+  </style>
+</head>
+<body>
+
+  <section class="product-list">
+
+    <article class="product">
+      <h2>Hollow Knight</h2>
+      <img src="img/hollowknight.jpg" alt="Hollow Knight" class="product-image">
+      <p class="description">Explore a beautifully hand-drawn world filled with challenging combat and hidden secrets.</p>
+      <p class="price">$20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <h2>Expedition 33</h2>
+      <img src="img/ClairObscura.png" alt="ClairObscura" class="product-image">
+      <p class="description">A haunting Belle Époque‑style RPG where an expedition fights to stop the Paintress from painting death.</p>
+      <p class="price">$50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product-sold">
+      <h2>Metaphor Refantazio</h2>
+      <img src="img/Metaphor.jpeg" alt="Metaphor" class="product-image">
+      <p class="description">Dive into a whimsical fantasy world where puzzles and magic shape your journey.</p>
+      <p class="price">$60</p>
+      <p class="sold-out">Sold Out</p>
+    </article>
+
+    <article class="product">
+      <h2>Gears of War</h2>
+      <img src="img/Gears.jpg" alt="Gears" class="product-image">
+      <p class="description">Experience intense third-person shooter action with epic battles and gripping storylines.</p>
+      <p class="price">$60</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product">
+      <h2>Undertale</h2>
+      <img src="img/undertale.png" alt="undertale" class="product-image">
+      <p class="description">A charming RPG where your choices truly affect the world and its memorable characters.</p>
+      <p class="price">$30</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+  </section>
+</body>
+</html>
